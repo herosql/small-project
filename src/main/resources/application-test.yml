@@ -1,0 +1,24 @@
+spring:
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3002/small-dev?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  quartz:
+    concurrent: false
+mybatis-plus:
+  mapper-locations: classpath*:org/jeecg/modules/**/xml/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: 4
+      table-underline: true
+  configuration:
+    call-setters-on-nulls: true
+
+logging:
+  level:
+    org.jeecg.modules.system.mapper: debug
+
