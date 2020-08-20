@@ -19,6 +19,8 @@
         <mybatis-plus.version>3.1.2</mybatis-plus.version>
         <druid.version>1.1.17</druid.version>
         <mybatis-spring-boot-starter.verion>2.1.2</mybatis-spring-boot-starter.verion>
+        <flyway-core.version>6.1.0</flyway-core.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
@@ -99,8 +101,15 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!--    flywaydb    -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>${flyway-core.version}</version>
         </dependency>
     </dependencies>
 

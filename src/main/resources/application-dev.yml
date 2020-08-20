@@ -8,6 +8,10 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   quartz:
     concurrent: false
+  #  eflyway 配置
+  flyway:
+    enabled: true
+    baselineOnMigrate: true
 mybatis-plus:
   mapper-locations: classpath*:com/genomics/**/xml/*Mapper.xml
   global-config:
