@@ -16,9 +16,10 @@
   - SpringBoot 2.3.3
   - mybatis-plus 3.1.2
   - fastjson
+  - flyway
   
 # 使用说明
 1. git clone 项目
 2. idea 导入项目，或直接导入远程项目
-3. 在本地创建数据库，utf8mb4 -- UTF-8 Unicode编码，utf8mb4_general_ci 规则,导入small-dev.sql脚本
+3. 在本地创建数据库small-dev，utf8mb4 -- UTF-8 Unicode编码，utf8mb4_general_ci 规则
 4. 启动项目
